@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(240, 240, 240);
+  margin: 0;
+  padding: 0 30px;
+  box-sizing: inherit;
+}
+
+.navigation {
+  max-width: 100%;
+  margin-top: 20px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.navigation p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.logo {
+  max-height: 60px;
+}
+
+.navigation input {
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  padding: 10px 30px;
+  border-radius: 30px;
+  max-width: 150px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.navigation input::placeholder {
+  color: rgb(180, 178, 178);
+}
+
+.btn-login {
+  border: 0;
+  outline: 0;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  color: rgba(0, 0, 0, 0.397);
+}
+
+/* ---------------------------main--------------- */
+
+.app {
+  /* opacity: 0; */
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 150px) auto;
+  gap: 20px;
+}
+
+/* -------------------balance------------- */
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+.balance-text {
+  font-size: 20px;
+}
+
+.balance-number {
+  font-size: 26px;
+}
+/* ------------------------movements----------------- */
+.movements {
+  grid-row: 2 / span 3;
+  background: white;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.movement-individual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgb(240, 240, 240);
+}
+
+.movement-type--deposit {
+  background: linear-gradient(lightgreen, darkgreen);
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.movement-type--withdrawal {
+  background: linear-gradient(red, darkred);
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.movement-value {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.transfer-money {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  background: orange;
+  border-radius: 10px;
+  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.transfer-money p {
+  margin-bottom: 10px;
+}
+
+.transfer-to {
+  display: flex;
+  gap: 10px;
+}
+
+.transfer-to--input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.transfer-to--input p {
+  font-size: 16px;
+}
+
+.transfer-to--amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.transfer-to--amount p {
+  font-size: 16px;
+}
+
+.transfer-to input {
+  border: 0;
+  outline: 0;
+  max-width: 100px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.507);
+  font-size: 14px;
+}
+
+.transfer-to button {
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 18px;
+  max-height: 40px;
+}
+
+.transfer-to button:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.397);
+}
+
+.request-loan {
+  background-color: green;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.request-loan p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.request-loan form {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.request-loan-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.request-loan-div input {
+  border: 0;
+  outline: 0;
+  max-width: 100px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.507);
+  font-size: 14px;
+}
+
+.request-loan-div p {
+  font-size: 16px;
+}
+
+.btn_request-loan {
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  font-size: 18px;
+  min-height: 40px;
+  padding: 5px;
+}
+
+.btn_request-loan:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.397);
+}
+
+.close-account {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  background: rgb(255, 63, 63);
+  border-radius: 10px;
+  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.close-account p {
+  margin-bottom: 10px;
+}
+
+.close-div {
+  display: flex;
+  gap: 10px;
+}
+
+.confirm-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.confirm-user p {
+  font-size: 16px;
+}
+
+.confirm-pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.confirm-pin p {
+  font-size: 16px;
+}
+
+.close-div input {
+  border: 0;
+  outline: 0;
+  max-width: 100px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.507);
+  font-size: 14px;
+}
+
+.close-div button {
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 18px;
+  max-height: 40px;
+}
+
+.close-div button:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.397);
+}
+
+.cumulativ {
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
+  display: flex;
+  gap: 20px;
+}
+
+.cumulativ div {
+  display: flex;
+  gap: 5px;
+  align-items: end;
+}
+
+.in .value {
+  color: green;
+  font-size: 20px;
+}
+
+.out .value {
+  color: red;
+  font-size: 20px;
+}
+
+.interest .value {
+  color: green;
+  font-size: 20px;
+}
+
+.sort {
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sort:hover {
+  color: rgba(0, 0, 0, 0.397);
+}
+
+.sort button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.timer {
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+  text-align: end;
+}

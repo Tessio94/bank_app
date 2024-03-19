@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="logo.png" />
+    <script defer src="app.js"></script>
+    <title>Bankist</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navigation">
+        <p class="welcome-text">Log in to get started</p>
+        <img src="logo.png" class="logo" />
+        <div class="form">
+          <form>
+            <input type="text" placeholder="user" class="username" />
+            <input type="text" placeholder="PIN" maxlength="4" class="pin" />
+            <button class="btn-login">&rarr;</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="app">
+        <!-- ----------------balance------------------ -->
+        <div class="balance">
+          <div class="balance-text">
+            <p>Current Balance</p>
+            <p>As of 05/03/2037</p>
+          </div>
+          <p class="balance-number">2270€</p>
+        </div>
+        <!-- -------------movements------------------- -->
+        <div class="movements">
+          <!-- <div class="movement-individual">
+            <div class="movement-type--deposit">1 DEPOSIT</div>
+            <div class="movement-value">90€</div>
+          </div>
+          <div class="movement-individual">
+            <div class="movement-type--withdrawal">1 DEPOSIT</div>
+            <div class="movement-value">90€</div>
+          </div> -->
+        </div>
+        <!-- ----------transfer money------------------ -->
+        <div class="transfer-money">
+          <p>Transfer money</p>
+          <form>
+            <div class="transfer-to">
+              <div class="transfer-to--input">
+                <input type="text" class="transfer-user" />
+                <p>Transfer to</p>
+              </div>
+              <div class="transfer-to--amount">
+                <input type="text" class="transfer-value" />
+                <p>Amount</p>
+              </div>
+              <button class="btn_transfer-button">&rarr;</button>
+            </div>
+          </form>
+        </div>
+        <!-- --------------------Request loan--------- -->
+        <div class="request-loan">
+          <p>Request loan</p>
+          <form>
+            <div class="request-loan-div">
+              <input type="text" class="request-value" />
+              <p>Amount</p>
+            </div>
+            <button class="btn_request-loan">&rarr;</button>
+          </form>
+        </div>
+        <!-- --------------------Close account------- -->
+        <div class="close-account">
+          <p>Close Account</p>
+          <form>
+            <div class="close-div">
+              <div class="confirm-user">
+                <input type="text" class="user-name" />
+                <p>Confirm user</p>
+              </div>
+              <div class="confirm-pin">
+                <input type="text" class="user-pin" />
+                <p>Confirm pin</p>
+              </div>
+              <button class="btn_close-account">&rarr;</button>
+            </div>
+          </form>
+        </div>
+        <!-- ------------------- cumulativ------------ -->
+        <div class="cumulativ">
+          <div class="in">
+            <p>IN</p>
+            <p class="value">2270€</p>
+          </div>
+          <div class="out">
+            <p>OUT</p>
+            <p class="value">0€</p>
+          </div>
+          <div class="interest">
+            <p>INTEREST</p>
+            <p class="value">21.3€</p>
+          </div>
+          <div class="sort">
+            <button class="btn-sort">&darr;</button>
+            <p>SORT</p>
+          </div>
+        </div>
+        <!-- ----------------------timer-------------- -->
+        <div class="timer">
+          <p>You will be logged out in <span class="clock">05:00</span></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
